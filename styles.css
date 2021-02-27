@@ -1,14 +1,31 @@
-.container {
-    width: 800px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -30px;
 }
+
+h1 {
+    margin-top: 100px;
+}
+
+.reset-btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
 #grid-container{
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-columns: repeat(16, 1fr);
     grid-gap: 0px;
+    height: 500px;
+    width: 500px;
 }
+
 
 .cell {
     border: 1px solid black;
-    padding: 1.5rem;
-
 }
